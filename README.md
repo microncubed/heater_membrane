@@ -1,1 +1,3 @@
 # heater_membrane
+## Introduction
+The aim of this repo is to provide, in Python, a simulation example of the steady-state thermal response of a simple 2-D system. The system consists of a wire heater on a silicon-dioxide membrane, as might be manufactured with a silicon-on-insulator process. For example, this may be used in a flow sensor. An advection term is used in the PDE so that the flow of water, or air, can be considered.
