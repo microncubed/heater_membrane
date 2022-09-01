@@ -4,19 +4,19 @@ Here is an example simulation, showing the steady-state thermal response of a 2-
 
 ## Directory structure
 
--src\ 
-pdeSim.py - code for solving the PDE\
-models.py - contains the model geometry\
-materials.csv - thermal properties of materials, referenced by models.py\
+-src. 
+pdeSim.py - code for solving the PDE  
+models.py - contains the model geometry. 
+materials.csv - thermal properties of materials, referenced by models.py. 
 
--scripts\
-membrane_heater.ipynb - runs the overall simulation, performs data analysis.\
+-scripts. 
+membrane_heater.ipynb - runs the overall simulation, performs data analysis.  
 
--data\
-membrane_heater.hdf5 - the simulation data, including the input parameters, as attributes.\
+-data. 
+membrane_heater.hdf5 - the simulation data, including the input parameters, as attributes.  
 
--figures\
-*.png - snapshots of the simulation results.\
+-figures. 
+*.png - snapshots of the simulation results.  
 
 ## Methodology
 The PDE is written as a sparse matrix equation and directly solved using the scipy.sparse.linalg.spsolve method. At a larger matrix size, an iterative solved would have been used, but here the run time of the direct solver is acceptable.
